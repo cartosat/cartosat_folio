@@ -10,5 +10,11 @@ WORKDIR /cartosat-folio
 # Install required dependencies.
 RUN npm install
 
+# Build production ready build.
+RUN npm run build
+
+# Start serving from build folder.
+RUN npm install -g serve
+
 # Run command.
-CMD ["npm", "start"]
+CMD ["serve", "-s", "build"]
