@@ -1,3 +1,4 @@
+# Use base node image.
 FROM node:18-alpine
 
 # Copy all files to desired folder.
