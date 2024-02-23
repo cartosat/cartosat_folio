@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+
+# production
+/build
+
+# Ignore identifier files
+*:Zone.Identifier
